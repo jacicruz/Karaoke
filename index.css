@@ -1,4 +1,5 @@
 body{
+  backdrop-filter: initial blur(10px);
   background-image: url(IMG/Fondo_index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
