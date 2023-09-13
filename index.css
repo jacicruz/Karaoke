@@ -1,177 +1,21 @@
 body{
-  background-color: #000000;
+  background-image: url(IMG/Fondo_index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-position 0.7s ease-out;
+
 }
-.circulos5{
-  background: #3a6a8515;
+
+#visualizador {
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  width: 1000px;
-  height: 1000px;
-  margin-left: 11%;
-  margin-top: -57%;
-}
-.circulos4{
-  background: #3a6a8523;
-  border-radius: 50%;
-  width: 900px;
-  height: 900px;
-  margin-left: 15%;
-  margin-top: -75%;
-}
-.circulos3{
-  background: #3a6a8523;
-  border-radius: 50%;
-  width: 800px;
-  height: 800px;
-  margin-left: 19%;
-  margin-top: -67%;
-}
-.circulos2{
-  background: #23495f1f;
-  border-radius: 50%;
-  width: 600px;
-  height: 600px;
-  margin-left: 25%;
-  margin-top: -52%;
-
-}
-.circulos{
-  background: #18404d6b;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  margin-left: 33%;
-  margin-top: -40%;
-}
-.Kumbala{
-  color: white;
-  margin-top: 1%;
-  margin-left: 28%;
-  font-size: 700%;
-}
-.vamos{
-  position: static ;
-}
-.rectangulo{
-  background: #3a6a8511;
-  width: 130px;
-  height: 1000px;
-  margin-left: 4%;
-  margin-top: -25%;
-  border-color: rgb(255, 255, 255);
-
-}
-.rectangulo2{
-  background: #3a6a8511;
-  width: 130px;
-  height: 1000px;
-  margin-left: 20%;
-  margin-top: -78%;
-
-}
-
-.rectangulo3{
-  background: #3a6a8511;
-  width: 130px;
-  height: 1000px;
-  margin-left: 36%;
-  margin-top: -78%;
-
-}
-
-.rectangulo4{
-  background: #3a6a8511;
-  width: 130px;
-  height: 1000px;
-  margin-left: 52%;
-  margin-top: -78%;
-
-}
-.rectangulo5{
-  background: #3a6a8511;
-  width: 130px;
-  height: 1000px;
-  margin-left: 69%;
-  margin-top: -78%;
-
-}
-.rectangulo6{
-  background: #3a6a8511;
-  width: 130px;
-  height: 1000px;
-  margin-left: 86%;
-  margin-top: -78%;
-
-}
-.Eslogan{
-  color: white;
-  margin-left: 33%;
-  margin-top: -14%;
-  font-size: 1.3cm;
-}
-
-#vamos{
-  background-color: rgb(27, 55, 87);
-  color:white;
-  border-radius: 24%;
-  border-style: none;
-  font-weight: bold;
-  font-size: xx-large;
-  padding: 20px;
-  margin-left: 13cm;
-}
-
-#vamos:hover{
-padding: 20px;
-background-color: aqua;
-}
-
-#vamos{
-  transition: background-color 0.15s ease-out .15s;
-}
-
-.Kumbala:hover{
-  color: rgb(174, 0, 255);
-}
-
-.Kumbala{
-  transition: color 0.25s, ease-in .15s;
-}
-
-.card {
-  width: 25cm;
-  height: 20cm;
-  padding: .8cm;
-  border-radius: 1rem;
-  font-size: 1rem;
-  color:white;
-  background: rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  border: 1.5px solid rgba(209, 213, 219, 0.3);
-  margin-left: 4cm;
-  margin-top: 4cm;
-}
-
-.card-title {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.card p{
-  margin-bottom: 1.5rem;
-}
-#cristal {
-  background-color: #6363db;
- border-radius: 0.5rem;
- color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-}
-.Eslogan:hover{
-  color: yellow;
-}
-
-.Eslogan{
-  transition: .18s, linear .15s;
+  background-color: rgb(32, 187, 27);
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  transition: transform 0.1s ease-out;
+  background-image: url(IMG/5f462e9e803a0d0004146b4e.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 10% ;
 }
