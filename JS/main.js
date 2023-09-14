@@ -56,5 +56,3 @@ document.body.addEventListener('mousemove', (event) => {
   document.body.addEventListener('mouseleave', () => {
     document.body.style.backgroundPosition = 'center center';
   });
-  
-  
