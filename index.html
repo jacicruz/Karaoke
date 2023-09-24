@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Karaoke de confianza</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1></h1>
-    <div id="menu">Hola</div>
-    <div id="visualizador">/div>
-        <form method="get" action="HTML/artista.html">
-            <input id = "boton1" name="boton1" type="image"
-            src="IMG/kumbala.png">
-        <audio id="audio" hidden controls autoplay>
+  <div id="visualizador">
+    <div class="reproductor">
+      <audio id="audio" controls autoplays loop  >
         <source src="SOUND/cold heart.mp3" type="audio/mpeg">
-    </audio>
-    <script src="JS/main.js"></script>
+      </audio>
+      <div class="lista-canciones">
+        <button onclick="cambiarCancion('SOUND/Lobo domesticado.mp3')">Lobo Domesticado</button>
+        <button onclick="cambiarCancion('SOUND/cold heart.mp3')">Cold heart</button>
+        <button onclick="cambiarCancion('SOUND/roses are red.mp3')">Roses are red</button>
+        <button onclick="cambiarCancion('SOUND/Say-so.mp3')">Say-so</button>
+        <button onclick="cambiarCancion('SOUND/Enamorado tuyo.mp3')">Enamorado tuyo</button>
+        <button onclick="cambiarCancion('SOUND/Algo mejor que hacer.mp3')">Algo mejor que hacer</button>
+      </div>
+    </div>
+    <form method="get" action="HTML/artista.html">
+        <input id = "boton1" name="boton1" type="image"
+        src="IMG/kumbala.png">
+  </div>
+  <script src="JS/main.js"></script>
+  <div id = titulo class = "moving-text">KARAOKE "Kumbala" </div>
 </body>
-
 </html>

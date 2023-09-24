@@ -13,11 +13,8 @@ const dataArray = new Uint8Array(analyser.frequencyBinCount);
 function updateVisualization() {
   analyser.getByteFrequencyData(dataArray);
 
-  // Calcula un valor de color basado en los datos de audio
   const average = dataArray.reduce((a, b) => a + b) / dataArray.length;
-  const hue = (average / 156) * 560; // Escala los valores a un rango de colores (0-360)
-
-  // Convierte el valor de color en una cadena CSS hsl()
+  const hue = (average / 300) * 560;
   const color = `hsl(${hue}, 100%, 50%)`;
 
   visualizador.style.backgroundColor = color;
@@ -32,27 +29,60 @@ audioElement.addEventListener('play', () => {
 });
 
 document.body.addEventListener('mousemove', (event) => {
-    const { clientX, clientY } = event;
-    const { innerWidth, innerHeight } = window;
-    const centroX = innerWidth / 2;
-    const centroY = innerHeight / 2;
-  
-    const distanciaX = clientX - centroX;
-    const distanciaY = clientY - centroY;
-  
-    // Define un radio dentro del cual el movimiento no se activará
-    const radioCentro = .8; // Ajusta el valor según tus preferencias
-  
-    if (Math.abs(distanciaX) < radioCentro && Math.abs(distanciaY) < radioCentro) {
-      // El mouse está dentro del radio del centro, no aplicar movimiento
-      document.body.style.backgroundPosition = 'center center';
-    } else {
-      const movimientoX = (distanciaX / centroX) * 1; // Ajusta la cantidad de movimiento aquí
-      const movimientoY = (distanciaY / centroY) * 1; // Ajusta la cantidad de movimiento aquí
-      document.body.style.backgroundPosition = `${movimientoX}px ${movimientoY}px`;
-    }
-  });
-  
-  document.body.addEventListener('mouseleave', () => {
+  const { clientX, clientY } = event;
+  const { innerWidth, innerHeight } = window;
+  const centroX = innerWidth / 2;
+  const centroY = innerHeight / 2;
+
+  const distanciaX = clientX - centroX;
+  const distanciaY = clientY - centroY;
+
+  const radioCentro = .8;
+
+  if (Math.abs(distanciaX) < radioCentro && Math.abs(distanciaY) < radioCentro) {
     document.body.style.backgroundPosition = 'center center';
+  } else {
+    const movimientoX = (distanciaX / centroX) * 1;
+    const movimientoY = (distanciaY / centroY) * 1;
+    document.body.style.backgroundPosition = `${movimientoX}px ${movimientoY}px`;
+  }
+});
+
+document.body.addEventListener('mouseleave', () => {
+  document.body.style.backgroundPosition = 'center center';
+});
+
+function cambiarCancion(source) {
+  audioElement.src = source;
+  audioElement.play();
+}
+
+const text = document.getElementById('text');
+
+source.connect(analyser);
+analyser.connect(audioContext.destination);
+
+analyser.fftSize = 256;
+const dataArray1 = new Uint8Array(analyser.frequencyBinCount);
+
+function updateTextMovement() {
+  analyser.getByteFrequencyData(dataArray1);
+  
+  // Calcula la amplitud promedio de los datos de audio
+  const averageAmplitude = dataArray1.reduce((sum, value) => sum + value, 0) / dataArray1.length;
+  
+  // Ajusta la cantidad de movimiento del texto en función de la amplitud
+  const movementAmount = averageAmplitude / 30; // Puedes ajustar este valor según tus preferencias
+  
+  // Aplica el movimiento al texto
+  text.style.transform = `translateY(${movementAmount}px)`;
+
+  requestAnimationFrame(updateTextMovement);
+}
+
+audio.addEventListener('play', () => {
+  audioContext.resume().then(() => {
+    analyser.connect(audioContext.destination);
+    updateTextMovement();
   });
+});

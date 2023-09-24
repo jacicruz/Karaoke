@@ -1,36 +1,193 @@
 body{
+  position: sticky;
   backdrop-filter: initial blur(10px);
-  background-image: url(IMG/Fondo_index.jpg);
+  background-image: url(IMG/dance-to-everything-dance.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: local;
+  background-attachment: fixed;
   transition: background-position 0.7s ease-out;
-
 }
 
 #visualizador {
   width: 500px;
   height: 500px;
+  position: inherit;
   border-radius: 50%;
   background-color: rgb(32, 187, 27);
   color: rgb(0, 0, 0);
   font-weight: 100;
   transition: transform 0.1s ease-out;
-  margin-left: 10% ;
-  margin-top: 5%;
+  margin-left: 5cm ;
+  margin-top: 8%;
 }
 
-menu{
-  width: auto;
-  height: 50px;
-  background-color: white;
-  margin-top: 1%;
+
+
+#audio{
+  width: 100%;
+  position: inherit;
+  margin-left: -15%;
+  margin-top: -8%;
+}
+
+#audio::-webkit-media-controls-panel {
+  background-color: #ff00dd; /* Color de fondo de los controles */
+}
+
+#audio::-webkit-media-controls-play-button,
+#audio::-webkit-media-controls-pause-button {
+  background-color: #ff00c8; /* Color del botón de reproducción/pausa */
+  color: #ffffff; /* Color del ícono de reproducción/pausa */
+}
+
+#audio::-webkit-media-controls-play-button::before {
+  content: '&#9723;'; /* Símbolo de reproducción */
+}
+
+audio::-webkit-media-controls-pause-button::before {
+  content: '\II'; /* Símbolo de pausa */
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+#reproductor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lista-canciones button {
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0066ff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 10px;
+  transition-duration: 0.3s;
+  border-radius: 50px;
+  font-family: 'Arial', sans-serif;
+  position: sticky;
+}
+
+.lista-canciones button:hover {
+  background-color: #01e9f1;
+}
+
+.lista-canciones button:active {
+  background-color: #02163a;
+  transition: 0.1s;
+}
+
+.lista-canciones {
+  display: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-32%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: -150%;
+  transition: display 5s ease-in; /* Agregamos una transición suave */
+}
+
+.reproductor:hover .lista-canciones {
+  display: flex;
+  flex-direction: row;
+}
+
+.reproductor {
+  position: fixed; /* Hace que el reproductor esté fijo en la pantalla */
+  width: 5%; /* Ancho completo */
+  background-color: #333; /* Color de fondo para el reproductor */
+}
+
+.lista-canciones {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: -80%;
+  margin-left: 220%;
+  transition: display 0.3s ease;
+}
+
+.reproductor:hover .lista-canciones {
+  display: flex;
+  flex-direction: row;
+}
+
+.lista-canciones button {
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #c500f7;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 10px;
+  transition-duration: 0.3s;
+  border-radius: 50px;
+  font-family: 'Arial', sans-serif;
+}
+
+.lista-canciones button:hover {
+  background-color: #e603c7;
+}
+
+.lista-canciones button:active {
+  background-color: #2b2831;
 }
 
 #boton1{
-position: absolute;
-margin: auto;
-background-color: rgba(0, 255, 255, 0);
-width: 500px;
-height: 500px;
+  position: absolute;
+  margin-left: 0%;
+  margin-top: 5%;
+  background-color: rgba(0, 255, 255, 0);
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  }
+
+  #boton1:hover {
+    filter: blur (10px);
+    transform: scale(1.1);
+  }
+
+#titulo{
+  margin-left: 60%;
+  margin-top: -30%;
+  font-size: 2cm;
+  color: white;
+  font-weight: 800;
+  font-family: serif;
+  border-color: #c500f7;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+@keyframes moveText {
+  from {
+    transform: translateY(2);
+  }
+  to {
+    transform: translateY(50px); /* Ajusta según la cantidad de movimiento deseada */
+  }
+}
+
+.moving-text {
+  font-size: 24px;
+  font-weight: bold;
+  animation: moveText .4s infinite alternate;
 }
