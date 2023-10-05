@@ -1,0 +1,53 @@
+<div class = "login">
+            <h2> inicio</h2>
+            <div class = "input">
+                <input type="text" class="input1" placeholder="correo" required>
+                <i class = "fa-solid fa-envelope"></i>
+            </div>
+            <div class = "input">
+                <input type="password" class="input1" placeholder="contraseña" required>
+                <i class = "fa-solid fa-lock"></i>
+            </div>
+            <div class="check">
+                <label><input type="checkbox">recordar</label> 
+                <a href="#">¿Olvidaste la contraseña?</a>
+            </div>
+            <div class = "button">
+                <button class = "btn">iniciar</button>
+            </div>
+            <div class = "sign-up">
+                <p>No tienes una cuenta?</p>
+                <a href="#">Crea una</a>
+            </div>
+        </div>
+
+        Todo esto es de un elemento para insertar
+
+        .login
+{
+width: 450px;
+position: relative;
+padding: 100px 30px;
+backdrop-filter: blur(10px);
+}
+
+.login h2
+{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+
+.login .input i 
+{
+    position: relative;
+    right: -370px;
+    bottom: 27px;
+    color: #fff;
+}
