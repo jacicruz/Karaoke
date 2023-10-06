@@ -56,7 +56,7 @@ font-weight: 600;
     width: 75%;
     height: 75%;
     transform: translate(-50%, -50%);
-    background-image: url(../IMG/Fondo_index.jpg);
+    background-image: url(../IMG/negro.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -174,18 +174,21 @@ button:active{
 .galeria {
     display: flex;
     width: 740px;
-    height: 700px;
+    height: 680px;
 }
 
 .galeria img {
     min-width: 0;
     flex: 1 1 10px;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 0.5s;
+    filter: grayscale(1);
 }
 
 .galeria img:hover{
-    flex: 1 1 280px;
+    flex: 1 1 580px;
     opacity: 1;
+    filter: grayscale(0);
+    
 }

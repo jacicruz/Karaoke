@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo">
+        <source src="../Video/Cold Heart.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/coldheart.jpg" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/cold heart.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+      <div class="letra" id="letra">
+        <p id="linea1" class="linea-letra">It's a human sign</p>
+    <p id="linea2" class="linea-letra">When things go wrong</p>
+    <p id="linea3" class="linea-letra">When the scent of her lingers</p>
+    <p id="linea4" class="linea-letra">And temptation's strong</p>
+    <p id="linea5" class="linea-letra">Cold, cold heart</p>
+    <p id="linea6" class="linea-letra">Hardened by you (oh)</p>
+    <p id="linea7" class="linea-letra">Some things lookin' better, baby</p>
+    <p id="linea8" class="linea-letra">Just passin' through (no, no, no, no, no)</p>
+    <p id="linea9" class="linea-letra">And I think it's gonna be a long, long time</p>
+    <p id="linea10" class="linea-letra">'Til touchdown brings me 'round again to find</p>
+    <p id="linea11" class="linea-letra">I'm not the man they think I am at home</p>
+    <p id="linea12" class="linea-letra">Oh no, no, no</p>
+    <p id="linea13" class="linea-letra">And this is what I should have said</p>
+    <p id="linea14" class="linea-letra">Well, I thought it, but I kept it hid</p>
+    <p id="linea15" class="linea-letra">Cold, cold heart</p>
+    <p id="linea16" class="linea-letra">Hardened by you (oh)</p>
+    <p id="linea17" class="linea-letra">Some things lookin' better, baby</p>
+    <p id="linea18" class="linea-letra">Just passin' through (no, no, no, no, no)</p>
+    <p id="linea19" class="linea-letra">And I think it's gonna be a long, long time</p>
+    <p id="linea20" class="linea-letra">'Til touchdown brings me 'round again to find</p>
+    <p id="linea21" class="linea-letra">I'm not the man they think I am at home</p>
+    <p id="linea22" class="linea-letra">Oh no, no, no</p>
+    <p id="linea23" class="linea-letra">And this is what I should have said</p>
+    <p id="linea24" class="linea-letra">Well, I thought it, but I kept it hid</p>
+    <p id="linea25" class="linea-letra">Cold, cold heart (oh)</p>
+    <p id="linea26" class="linea-letra">Hardened by you</p>
+    <p id="linea27" class="linea-letra">Some things lookin' better, baby (oh)</p>
+    <p id="linea28" class="linea-letra">Just passin' through (no, no, no, no, no)</p>
+    <p id="linea29" class="linea-letra">And I think it's gonna be a long, long time</p>
+    <p id="linea30" class="linea-letra">'Til touchdown brings me 'round again to find</p>
+    <p id="linea31" class="linea-letra">I'm not the man they think I am at home (Oh no, no, no)</p>
+    <p id="linea32" class="linea-letra">And this is what I should have said (and I think it's gonna be a long, long time)</p>
+    <p id="linea33" class="linea-letra">('Til touchdown brings me 'round again to find)</p>
+    <p id="linea34" class="linea-letra">Well, I thought it, but I kept it hid (I'm not the man they think I am at home)</p>
+    <p id="linea35" class="linea-letra">Oh no, no, no (no, no, no, no, no)</p>
+    <p id="linea36" class="linea-letra">Shoorah (oh)</p>
+    <p id="linea37" class="linea-letra">Shoorah</p>
+    <p id="linea38" class="linea-letra">Shoorah (oh)</p>
+    <p id="linea39" class="linea-letra">Shoorah</p>
+    <p id="linea40" class="linea-letra">(No, no, no, no, no)</p>
+      </div>
+        <div class="colorful-element" id="colorful-element"></div>
+    </div>
+  </div>
+  
+  <script src="../JS/Reproductorcold.js"></script>
+</body>
+</html>

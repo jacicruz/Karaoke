@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo" loop>
+        <source src="../Video/disculpa los malos pensamientos.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/Disculpa.jpg" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/Disculpa los malos pensamientos.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+        <div class="letra" id="letra">
+            <p id="linea1" class="linea-letra">Estas manos de rojo están</p>
+    <p id="linea2" class="linea-letra">Manchadas por todas las veces</p>
+    <p id="linea3" class="linea-letra">Que yo en mi sueños</p>  
+    <p id="linea4" class="linea-letra">Te he asesinado con tanta pasión</p>
+    <p id="linea5" class="linea-letra">Enjuagaremos aquellas veces</p>
+    <p id="linea6" class="linea-letra">Que dijiste que me amabas</p>
+    <p id="linea7" class="linea-letra">Un poco de veneno y aguarrás</p>
+    <p id="linea8" class="linea-letra">Sumérgete un poco más</p>
+    <p id="linea9" class="linea-letra">Porque tú muerta ya estás</p>
+    <p id="linea10" class="linea-letra">Muerta estarás</p>
+    <p id="linea11" class="linea-letra">Puedes estar tranquila</p>
+    <p id="linea12" class="linea-letra">Pues solo en sueños me atrevo a matar</p>
+    <p id="linea13" class="linea-letra">Olvidaremos todos esos</p>
+    <p id="linea14" class="linea-letra">Momentos que juntos pasamos</p>
+    <p id="linea15" class="linea-letra">Te juro que yo no podré olvidar</p>
+    <p id="linea16" class="linea-letra">Pues la venganza es prioridad</p>
+    <p id="linea17" class="linea-letra">Celebraremos que todo terminó</p>
+    <p id="linea18" class="linea-letra">Con un vodka barato</p>
+    <p id="linea19" class="linea-letra">Si quieres cerveza, si quieres</p>
+    <p id="linea20" class="linea-letra">Si quieres un poco más</p>
+    <p id="linea21" class="linea-letra">Porque tú muerta ya estás</p>
+    <p id="linea22" class="linea-letra">Muerta estarás</p>
+    <p id="linea23" class="linea-letra">Puedes estar tranquila</p>
+    <p id="linea24" class="linea-letra">Pues solo en sueños me atrevo a matar</p>
+    <p id="linea25" class="linea-letra">Porque tú muerta ya estás, muerta estarás</p>
+    <p id="linea26" class="linea-letra">Puedes estar tranquila, pues, solo en sueños</p>
+    <p id="linea27" class="linea-letra">Me atrevo a matar</p>
+    <p id="linea28" class="linea-letra">De rojo te ves bien</p>
+    <p id="linea29" class="linea-letra">Combina con tus ojos y tu piel</p>
+    <p id="linea30" class="linea-letra">De rojo te ves bien, rojo sangre</p>
+    <p id="linea31" class="linea-letra">De rojo te ves bien (rojo te ves bien)</p>
+    <p id="linea32" class="linea-letra">Rojo te ves bien (rojo te ves)</p>
+    <p id="linea33" class="linea-letra">De rojo te ves bien (rojo)</p>
+    <p id="linea34" class="linea-letra">De rojo te ves bien (lo que pedías yo te lo di) (rojo te ves bien)</p>
+    <p id="linea35" class="linea-letra">De rojo te ves bien (lo que tenía te lo ofrecí) (rojo te ves)</p>
+    <p id="linea36" class="linea-letra">De rojo te ves bien (ahora solo tengo malos pensamientos) (rojo)</p>
+    <p id="linea37" class="linea-letra">De rojo te ves bien (porque tú muerta ya estás, muerta estarás)</p>
+    <p id="linea38" class="linea-letra">De rojo te ves bien</p>
+    <p id="linea39" class="linea-letra">De rojo te ves bien (me atrevo a matar)</p>
+    <p id="linea40" class="linea-letra">(Ahora solo tengo malos pensamientos)</p>
+  </div>
+          </div>
+        </div>
+<div class="colorful-element" id="colorful-element"></div>
+</div>
+</div>
+
+<script src="../JS/Reproductordisculpa.js"></script>
+</body>
+</html>

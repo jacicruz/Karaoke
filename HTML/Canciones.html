@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Canciones</title>
+  <link rel="stylesheet" href="../CSS/Canciones.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+  <div class="canciones-lista">
+    <div class="cancion-item" onclick="redirigir('Reproductor.html')"  onmouseover="showPreviews(changeBackground('../IMG/porfiado.jpg'), showMusic('../SOUND/Enamorado tuyo.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="Cuarteto de nos" > <script> function redirigir(url){
+        window.location.href = url;    
+        }</script>
+      <img src="../IMG/porfiado.jpg" alt="Álbum 1" class="album-imagen">
+      <div class="cancion-info">
+        <div class="cancion-titulo">Enamorado tuyo</div>
+        <div class="cancion-detalle">
+          <span class="autor">Cuarteto de nos</span>
+          <span class="año">Año 2021</span>
+          <span class="album">Porfiado</span>
+        </div>
+      </div>
+    </div>
+    <div class="cancion-item" onclick="redirigir('../HTML/disculpa.html')"  onmouseover="showPreviews(changeBackground('../IMG/Disculpa.jpg'), showMusic('../SOUND/Disculpa los malos pensamientos.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="pxndx"> <script> function redirigir(url){
+        window.location.href = url;    
+        }</script>
+      <img src="../IMG/Disculpa.jpg" alt="Para ti con desprecio" class="album-imagen">
+      <div class="cancion-info">
+        <div class="cancion-titulo">Disculpa los malos pensamientos </div>
+        <div class="cancion-detalle">
+          <span class="autor">PXNDX</span>
+          <span class="año">Año 2007</span>
+          <span class="album">Para ti con desprecio</span>
+        </div>
+      </div>
+  </div>
+  <div class="cancion-item" onclick="redirigir('../HTML/Sayso.html')"  onmouseover="showPreviews(changeBackground('../IMG/doja.jpg'), showMusic('../SOUND/Say-so.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="Doja"> <script> function redirigir(url){
+    window.location.href = url;    
+    }</script>
+  <img src="../IMG/doja.jpg" alt="Pink" class="album-imagen">
+  <div class="cancion-info">
+    <div class="cancion-titulo">Say-so</div>
+    <div class="cancion-detalle">
+      <span class="autor">Doja cat</span>
+      <span class="año">Año 2019</span>
+      <span class="album">Pink</span>
+    </div>
+  </div>
+  </div>
+  <div class="cancion-item" onclick="redirigir('../HTML/ColdHeart.html')"  onmouseover="showPreviews(changeBackground('../IMG/coldheart.jpg'), showMusic('../SOUND/cold heart.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="Dua lipa"> <script> function redirigir(url){
+    window.location.href = url;    
+    }</script>
+  <img src="../IMG/coldheart.jpg" alt="Pink" class="album-imagen">
+  <div class="cancion-info">
+    <div class="cancion-titulo">Cold heart</div>
+    <div class="cancion-detalle">
+      <span class="autor">Dua Lipa ft Elton Jhon</span>
+      <span class="año">Año 2022</span>
+      <span class="album">Cold heart</span>
+    </div>
+  </div>
+  </div>
+  <div class="cancion-item" onclick="redirigir('../HTML/Lobodom.html')"  onmouseover="showPreviews(changeBackground('../IMG/lobdom.jpg'), showMusic('../SOUND/Lobo domesticado.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')"alt="pxndx"> <script> function redirigir(url){
+    window.location.href = url;    
+    }</script>
+  <img src="../IMG/lobdom.jpg" alt="Pink" class="album-imagen">
+  <div class="cancion-info">
+    <div class="cancion-titulo">Lobo domesticado</div>
+    <div class="cancion-detalle">
+      <span class="autor">Valentin Elizalde</span>
+      <span class="año">Año 2006</span>
+      <span class="album">Lobo domesticado</span>
+    </div>
+  </div>
+  </div>
+
+  <div class="cancion-item" onclick="redirigir('../HTML/Wakeme-up.html')"  onmouseover="showPreviews(changeBackground('../IMG/wake.jpg'), showMusic('../SOUND/wake me up.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="avicii">
+    <script>
+      function redirigir(url) {
+        window.location.href = url;
+      }
+    </script>
+
+    <img src="../IMG/wake.jpg" alt="Pink" class="album-imagen" onmouseover="changeBackground('../IMG/lobdom.jpg')" onmouseout="resetBackground()">
+    <div class="cancion-info">
+    <div class="cancion-titulo">Wake me Up</div>
+    <div class="cancion-detalle">
+      <span class="autor">Tim Bergling</span>
+      <span class="año">Año 2013</span>
+      <span class="album">True</span>
+      <div class="preview" id="preview1"></div>
+    </div>
+  </div>
+  </div>
+  <audio id="audio-preview" preload="auto"></audio>
+  <script>
+    function showPreviews(imageUrl, audioUrl) {
+      showImagePreview(imageUrl);
+      showAudioPreview(audioUrl);
+    }
+    function changeBackground(imageUrl) {
+      document.body.style.backgroundImage = `url(${imageUrl})`;
+      document.body.style.backgroundSize = 'cover';
+    }
+    function showMusic(audioUrl) {
+      const preview = document.getElementById('preview');
+      const audioPreview = document.getElementById('audio-preview');
+  
+      audioPreview.src = audioUrl;
+      audioPreview.play();
+      preview.style.display = 'block';
+    }
+  </script>
+
+  <script>
+    function hidenPreviews(){
+      resetBackground();
+      hideMusic();
+    function resetBackground() {
+      document.body.style.backgroundImage = 'none';
+    }
+    function hideMusic() {
+      const preview = document.getElementById('preview');
+      const audioPreview = document.getElementById('audio-preview');
+  
+      audioPreview.pause();
+      preview.style.display = 'none';
+    }
+    }
+  </script>
+
+</body>
+</html>

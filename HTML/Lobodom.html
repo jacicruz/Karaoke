@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo" loop>
+        <source src="../Video/lobdom.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/lobdom.jpg" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/Lobo domesticado.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+        <div class="letra" id="letra">
+            <p id="linea1" class="linea-letra">Te han dicho de mí</p>
+            <p id="linea2" class="linea-letra">Que soy como el río</p>
+            <p id="linea3" class="linea-letra">Que llega, que besa, que besa y se va</p>
+            <p id="linea4" class="linea-letra">Te han dicho que soy</p>
+            <p id="linea5" class="linea-letra">Frívolo y vacío</p>
+            <p id="linea6" class="linea-letra">Pero es tan sencillo lo que quiero ser</p>
+            <p id="linea7" class="linea-letra">Un lobo domesticado</p>
+            <p id="linea8" class="linea-letra">Un loco enamorado, siempre quiero ser</p>
+            <p id="linea9" class="linea-letra">Un lobo domesticado</p>
+            <p id="linea10" class="linea-letra">Un loco enamorado, tu mascota fiel</p>
+            <p id="linea11" class="linea-letra">Te han dicho de mí</p>
+            <p id="linea12" class="linea-letra">Una y tantas cosas</p>
+            <p id="linea13" class="linea-letra">Que tengas cuidado para no caer</p>
+            <p id="linea14" class="linea-letra">Que es trampa mi amor</p>
+            <p id="linea15" class="linea-letra">Y anzuelo mis rosas</p>
+            <p id="linea16" class="linea-letra">Pero es tan sencillo lo que quiero ser</p>
+            <p id="linea17" class="linea-letra">Un lobo domesticado</p>
+            <p id="linea18" class="linea-letra">Un loco enamorado, siempre quiero ser</p>
+            <p id="linea19" class="linea-letra">Un lobo domesticado</p>
+            <p id="linea20" class="linea-letra">Un loco enamorado, tu mascota fiel</p>
+            <p id="linea21" class="linea-letra">Un lobo domesticado</p>
+            <p id="linea22" class="linea-letra">Un loco enamorado, siempre quiero ser</p>
+            <p id="linea23" class="linea-letra">Un lobo domesticado</p>
+            <p id="linea24" class="linea-letra">Un loco enamorado, tu mascota fiel</p>
+          </div>
+        </div>
+<div class="colorful-element" id="colorful-element"></div>
+</div>
+</div>
+
+<script src="../JS/Reproductorlobdom.js"></script>
+</body>
+</html>

@@ -11,9 +11,8 @@
 <header class = "header">
     <nav class = "nav">
         <a href="../index.html">inicio </a>
-        <a href="#">Artistas </a>
-        <a href="#">Canciones </a>
-        <a href="#">Generos</a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
     </nav>
 </header>
 <div class = "background"></div>
@@ -26,16 +25,32 @@
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github" onclick="redirigir('https://github.com/jacicruz/Karaoke')"><script> function redirigir(url){
+                window.location.href = url;    
+                }</script> </i>
         </div>
     </div>
     <div class = "galeria">
-        <img src="../IMG/kumbala.png" onclick="redirigir('Cuateto.html')"> <script> function redirigir(url){
+        <img src="../IMG/Cuarteto.jpg" onclick="redirigir('Canciones.html')" alt="Cuarteto de nos"> <script> function redirigir(url){
         window.location.href = url;    
         }</script>
-        <img src="../IMG/Sala.jpeg" alt="">
-        <img src="../IMG/dance-to-everything-dance.gif" alt="">
+        <img src="../IMG/Dua.jpg" onclick="redirigir('https://www.vogue.mx/estilo-de-vida/articulo/dua-lipa-biografia-y-canciones')"> <script> function redirigir(url){
+            window.location.href = url;    
+            }</script>
+        <img src="../IMG/VAlentin.jpg" onclick="redirigir('../html/Canciones.html')"> <script> function redirigir(url){
+            window.location.href = url;    
+            }</script>
+        <img src="../IMG/doja.jpg" onclick="redirigir('Canciones.html')"> <script> function redirigir(url){
+            window.location.href = url;    
+            }</script>
+        <img src="../IMG/Aqua.JPG" onclick="redirigir('../html/Canciones.html')"> <script> function redirigir(url){
+            window.location.href = url;    
+                }</script>
+        <img src="../IMG/avicii.jpg" onclick="redirigir('Canciones.html')"> <script> function redirigir(url){
+            window.location.href = url;    
+                }</script>
     </div>
     </section>
+    <script src="../JS/Fondo.js"></script>
 </body>
 </html>
