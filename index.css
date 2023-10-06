@@ -191,3 +191,47 @@ audio::-webkit-media-controls-pause-button::before {
   font-weight: bold;
   animation: moveText .4s infinite alternate;
 }
+
+.galeria {
+  display: flex;
+  width: 740px;
+  height: 680px;
+}
+
+.imagen-container {
+  position: relative;
+  flex: 1 1 10px;
+  overflow: hidden; /* Para que el texto no se desborde */
+}
+
+.galeria img {
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: 0.5s;
+  filter: grayscale(1);
+}
+
+.imagen-container:hover img {
+  flex: 1 1 580px;
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  display: none;
+}
+
+/* Mostrar texto al hacer hover en la imagen */
+.imagen-container:hover .texto {
+  display: block;
+}

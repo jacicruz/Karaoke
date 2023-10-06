@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css" href = "https://open.spotify.com">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo">
+        <source src="../Video/Enamorado tuyo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/porfiado.jpg" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/Enamorado tuyo.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+      <div class="letra" id="letra">
+        <p id="linea1" class = "linea-letra">Y si te parece que yo estoy enamorado tuyo</p>
+        <p id="linea2" class = "linea-letra">Eso es un invento, intuyo, no des crédito a murmullos</p>
+        <p id="linea3" class = "linea-letra">Porque casi nunca llamo para decir que te amo</p>
+        <p id="linea4" class = "linea-letra">Y más de una vez lo hice a un número equivocado</p>
+        <p id="linea5" class = "linea-letra">Casi nunca nadie dice que yo estoy enamorado tuyo</p>
+        <p id="linea6" class = "linea-letra">Raramente desespero por tenerte aquí a mi lado</p>
+        <p id="linea7" class = "linea-letra">Y eso no significa que tenga un significado</p>
+        <p id="linea8" class = "linea-letra">Si pensás que amor yo siento, por favor no hagas pamento</p>
+        <p id="linea9" class = "linea-letra">No comentes con tu gente, sobre nuestro asunto</p>
+        <p id="linea10" class = "linea-letra">Casi nunca nadie dice que yo estoy enamorado tuyo</p>
+        <p id="linea11" class = "linea-letra">No te vistas, no te hagas la nunca vista</p>
+        <p id="linea12" class = "linea-letra">Tengo en lista a cantarte un "hasta la vista"</p>
+        <p id="linea13" class = "linea-letra">No te vistas, no te hagas la nunca vista</p>
+        <p id="linea14" class = "linea-letra">Tengo lista una canción que dice "hasta la vista, señorita"</p>
+        <p id="linea15" class = "linea-letra">Casi nunca veo la foto tuya en mi celular</p>
+        <p id="linea16" class = "linea-letra">Sigue ahí por la pereza que me da apretar "borrar"</p>
+        <p id="linea17" class = "linea-letra">No estoy tan obsesionado, vale como aclaración</p>
+        <p id="linea18" class = "linea-letra">Si pensás que es por eso que yo canto esta canción</p>
+        <p id="linea19" class="linea-letra">Casi nunca nadie dice que yo estoy enamorado tuyo</p>
+        <p id="linea20" class="linea-letra">No te vistas, no te hagas la nunca vista</p>
+        <p id="linea21" class="linea-letra">Tengo en lista a cantarte un "hasta la vista"</p>
+        <p id="linea22" class="linea-letra">No te vistas, no te hagas la nunca vista</p>
+        <p id="linea23" class="linea-letra">Tengo lista una canción que dice "hasta la vista, señorita"</p>
+        <p id="linea24" class="linea-letra">Y si te parece que yo estoy enamorado tuyo</p>
+        <p id="linea25" class="linea-letra">Eso es un invento, intuyo, no des crédito a murmullos</p>
+        <p id="linea26" class="linea-letra">Porque casi nunca llamo para decir que te amo</p>
+        <p id="linea27" class="linea-letra">Y más de una vez lo hice a un número equivocado</p>
+        <p id="linea28" class="linea-letra">Casi nunca nadie dice que yo estoy enamorado tuyo</p>
+        <p id="linea29" class="linea-letra">No te vistas, no te hagas la nunca vista</p>
+        <p id="linea30" class="linea-letra">Tengo en lista a cantarte un "hasta la vista"</p>
+        <p id="linea31" class="linea-letra">No te vistas, no te hagas la nunca vista</p>
+        <p id="linea32" class="linea-letra">Tengo lista una canción que dice "hasta la vista, señorita"</p>
+      </div>
+        <div class="colorful-element" id="colorful-element"></div>
+    </div>
+  </div>
+  
+  <script src="../JS/Reproductor.js"></script>
+</body>
+</html>

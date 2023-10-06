@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo" loop>
+        <source src="../Video/Say So.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/dance-to-everything-dance.gif" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/Say-so.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+      <div class="letra" id="letra">
+        <p id="linea1" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+        <p id="linea2" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea3" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea4" class="linea-letra">You got to keep me focused, you want it, say so</p>
+            <p id="linea5" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+            <p id="linea6" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea7" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea8" class="linea-letra">You got to keep me focused, you want it, say so</p>
+            <p id="linea9" class="linea-letra">It's been a long time since you fell in love</p>
+            <p id="linea10" class="linea-letra">You ain't coming out your shell, you really ain't been yourself</p>
+            <p id="linea11" class="linea-letra">Tell me what must I do (do tell, my love)</p>
+            <p id="linea12" class="linea-letra">'Cause luckily I'm good at reading</p>
+            <p id="linea13" class="linea-letra">I wouldn't bug him, but he won't stop cheesin'</p>
+            <p id="linea14" class="linea-letra">And we can dance all day around it</p>
+            <p id="linea15" class="linea-letra">If you front then I'll be bouncing</p>
+            <p id="linea16" class="linea-letra">If you want it scream and shout it, babe</p>
+            <p id="linea17" class="linea-letra">Before I leave you dry</p>
+            <p id="linea18" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+            <p id="linea19" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea20" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea21" class="linea-letra">You got to keep me focused, you want it, say so</p>
+            <p id="linea22" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+            <p id="linea23" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea24" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea25" class="linea-letra">You got to keep me focused, you want it, say so (yeah)</p>
+            <p id="linea26" class="linea-letra">Let me check my chest, my breath right quick (ha)</p>
+            <p id="linea27" class="linea-letra">He ain't never seen it in a dress like this (ah)</p>
+            <p id="linea28" class="linea-letra">He ain't never even been impressed like this</p>
+            <p id="linea29" class="linea-letra">Prolly why I got him quiet on the set like zip</p>
+            <p id="linea30" class="linea-letra">Like it, love it, need it bad</p>
+            <p id="linea31" class="linea-letra">Take it, own it, steal it, fast</p>
+            <p id="linea32" class="linea-letra">Boy, stop playing, grab my ass</p>
+            <p id="linea33" class="linea-letra">Why you actin' like you shy?</p>
+            <p id="linea34" class="linea-letra">Shut it, save it, keep it, pushin'</p>
+            <p id="linea35" class="linea-letra">Why you beating 'round the bush?</p>
+            <p id="linea36" class="linea-letra">And knowing you want all this woman</p>
+            <p id="linea37" class="linea-letra">Never knock it 'til you try (yeah, yeah)</p>
+            <p id="linea38" class="linea-letra">All of them bitches hating I have you with me</p>
+            <p id="linea39" class="linea-letra">All of my niggas saying you mad committed</p>
+            <p id="linea40" class="linea-letra">Realer than anybody you had, and pretty</p>
+            <p id="linea41" class="linea-letra">All of that body-ody, the ass and titties</p>
+            <p id="linea42" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+            <p id="linea43" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea44" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea45" class="linea-letra">You got to keep me focused, you want it, say so</p>
+            <p id="linea46" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+            <p id="linea47" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea48" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea49" class="linea-letra">You got to keep me focused, you want it, say so</p>
+            <p id="linea50" class="linea-letra">Day to night to morning, keep with me in the moment</p>
+            <p id="linea51" class="linea-letra">I'd let you had I known it, why don't you say so?</p>
+            <p id="linea52" class="linea-letra">Didn't even notice, no punches left to roll with</p>
+            <p id="linea53" class="linea-letra">You got to keep me focused, you want it, say so</p>
+            
+</div>
+<div class="colorful-element" id="colorful-element"></div>
+</div>
+</div>
+
+<script src="../JS/Reproductorsayso.js"></script>
+</body>
+</html>

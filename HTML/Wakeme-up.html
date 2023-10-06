@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo">
+        <source src="../Video/wakemeup.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/wake.jpg" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/wake me up k.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+      <div class="letra" id="letra">
+        <p id="linea1" class="linea-letra">Feeling my way through the darkness</p>
+        <p id="linea2" class="linea-letra">Guided by a beating heart</p>
+        <p id="linea3" class="linea-letra">I can't tell where the journey will end</p>
+        <p id="linea4" class="linea-letra">But I know where to start</p>
+        <p id="linea5" class="linea-letra">They tell me I'm too young to understand</p>
+        <p id="linea6" class="linea-letra">They say I'm caught up in a dream</p>
+        <p id="linea7" class="linea-letra">Well life will pass me by if I don't open up my eyes</p>
+        <p id="linea8" class="linea-letra">Well that's fine by me</p>
+        <p id="linea9" class="linea-letra">So wake me up when it's all over</p>
+        <p id="linea10" class="linea-letra">When I'm wiser and I'm older</p>
+        <p id="linea11" class="linea-letra">All this time I was finding myself, and I</p>
+        <p id="linea12" class="linea-letra">Didn't know I was lost</p>
+        <p id="linea13" class="linea-letra">So wake me up when it's all over</p>
+        <p id="linea14" class="linea-letra">When I'm wiser and I'm older</p>
+        <p id="linea15" class="linea-letra">All this time I was finding myself, and I</p>
+        <p id="linea16" class="linea-letra">Didn't know I was lost</p>
+        <p id="linea17" class="linea-letra">I tried carrying the weight of the world</p>
+        <p id="linea18" class="linea-letra">But I only have two hands</p>
+        <p id="linea19" class="linea-letra">Hope I get the chance to travel the world</p>
+        <p id="linea20" class="linea-letra">But I don't have any plans</p>
+        <p id="linea21" class="linea-letra">Wish that I could stay forever this young</p>
+        <p id="linea22" class="linea-letra">Not afraid to close my eyes</p>
+        <p id="linea23" class="linea-letra">Life's a game made for everyone</p>
+        <p id="linea24" class="linea-letra">And love is a prize</p>
+        <p id="linea25" class="linea-letra">So wake me up when it's all over</p>
+        <p id="linea26" class="linea-letra">When I'm wiser and I'm older</p>
+        <p id="linea27" class="linea-letra">All this time I was finding myself, and I</p>
+        <p id="linea28" class="linea-letra">Didn't know I was lost</p>
+        <p id="linea29" class="linea-letra">So wake me up when it's all over</p>
+        <p id="linea30" class="linea-letra">When I'm wiser and I'm older</p>
+        <p id="linea31" class="linea-letra">All this time I was finding myself, and I</p>
+        <p id="linea32" class="linea-letra">I didn't know I was lost</p>
+        <p id="linea33" class="linea-letra">I didn't know I was lost</p>
+        <p id="linea34" class="linea-letra">I didn't know I was lost</p>
+        <p id="linea35" class="linea-letra">I didn't know</p>
+      </div>
+        <div class="colorful-element" id="colorful-element"></div>
+    </div>
+  </div>
+  
+  <script src="../JS/Reproductorw.js"></script>
+</body>
+</html>

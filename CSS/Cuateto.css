@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: #ffffff;  }
+  
+  /* Estilos para el header (galería) */
+  .yo {
+    background-color:#ffffff;
+    background-size: cover;
+    height: 500px; /* Ajusta la altura según lo necesites */
+  }
+  .frase-artista h1 {
+    font-size: 4em;
+    color: #000000;
+    background-image: linear-gradient(to right, #ffffff, #0091ff);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
+  }
+  
+  .header
+{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
+}
+.header .nav a
+{
+text-decoration: none;
+color: #fff;
+font-size: 20px;
+margin-left: 20px;
+font-weight: 600;
+}
+.nav a:hover
+{
+    border-bottom: 4px solid #fff;
+    transition: .5s;
+}
+  
+.galeria {
+    display: flex;
+    width: auto;
+    height: 500px;
+}
+
+.galeria img {
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s;
+    filter: contrast(.2);
+}
+
+.galeria img:hover{
+    opacity: 1;
+    filter: contrast(1);
+    
+}
+  
+
+  
+  /* Estilos para la frase del artista */
+  .frase-artista {
+    padding: 20px;
+    background-image: linear-gradient(to right, #ffffff, #00a2ff); /* Gradiente de izquierda a derecha */
+    color: #000000;
+}
+
+  
+  .frase-artista p {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+  }
+  
+  /* Estilos para la lista de canciones */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .lista-canciones {
+    width: 80%;
+    margin: 0 auto;
+    color: #000000;
+  }
+  
+  .lista-canciones h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .lista-canciones ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-canciones li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #30adf1;
+    border-radius: 10px;
+  }
+  
+  .lista-canciones li a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lista-canciones li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Cambia el color de fondo al pasar el mouse */
+  .lista-canciones li:hover {
+    background-color: #717171;
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
