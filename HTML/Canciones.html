@@ -28,6 +28,20 @@
         </div>
       </div>
     </div>
+
+    <div class="cancion-item" onclick="redirigir('Narcicista.html')"  onmouseover="showPreviews(changeBackground('../IMG/amantes.jpg'), showMusic('../SOUND/Narcicista por excelencia.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="PXNDX" > <script> function redirigir(url){
+      window.location.href = url;    
+      }</script>
+    <img src="../IMG/amantes.jpg" alt="Álbum 1" class="album-imagen">
+    <div class="cancion-info">
+      <div class="cancion-titulo">Narcicista por excelencia (MTV Unplugged)</div>
+      <div class="cancion-detalle">
+        <span class="autor">PXNDX</span>
+        <span class="año">Año 2010</span>
+        <span class="album">Amantes sunt amentes</span>
+      </div>
+    </div>
+  </div>
     <div class="cancion-item" onclick="redirigir('../HTML/disculpa.html')"  onmouseover="showPreviews(changeBackground('../IMG/Disculpa.jpg'), showMusic('../SOUND/Disculpa los malos pensamientos.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="pxndx"> <script> function redirigir(url){
         window.location.href = url;    
         }</script>
@@ -54,6 +68,7 @@
     </div>
   </div>
   </div>
+
   <div class="cancion-item" onclick="redirigir('../HTML/ColdHeart.html')"  onmouseover="showPreviews(changeBackground('../IMG/coldheart.jpg'), showMusic('../SOUND/cold heart.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')" alt="Dua lipa"> <script> function redirigir(url){
     window.location.href = url;    
     }</script>
@@ -66,6 +81,7 @@
       <span class="album">Cold heart</span>
     </div>
   </div>
+  
   </div>
   <div class="cancion-item" onclick="redirigir('../HTML/Lobodom.html')"  onmouseover="showPreviews(changeBackground('../IMG/lobdom.jpg'), showMusic('../SOUND/Lobo domesticado.mp3'))" onmouseout="hidenPreviews('resetBackground(), hideMusic()')"alt="pxndx"> <script> function redirigir(url){
     window.location.href = url;    
@@ -98,6 +114,9 @@
       <div class="preview" id="preview1"></div>
     </div>
   </div>
+  
+  </div>
+</div>
   </div>
   <audio id="audio-preview" preload="auto"></audio>
   <script>

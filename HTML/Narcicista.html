@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de música con letra sincronizada</title>
+  <link rel="stylesheet" href="../CSS/Reproductor.css">
+</head>
+<body>
+  <header class = "header">
+    <nav class = "nav">
+        <a href="../index.html">inicio </a>
+        <a href="../HTML/artista.html">Artistas </a>
+        <a href="../HTML/Canciones.html">Canciones </a>
+    </nav>
+</header>
+    <video muted id="video-fondo" loop>
+        <source src="../Video/Narcisista por Excelencia.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+  <div class="reproductor">
+    <div class="album-art">
+        <img src="../IMG/amantes.jpg" alt="Album">
+      </div>
+    <audio id="audio" src="../SOUND/Narcicista por excelencia.mp3" >
+    </audio>
+    <div class="audio-controls">
+        <button onclick="togglePlay()">▶</button>
+        <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="letra-container">
+        <div class="letra" id="letra">
+            <p id="linea1" class="linea-letra">¿Sabes qué es la inseguridad?</p>
+            <p id="linea2" class="linea-letra">¿Sabes lo que es sentir la soledad?</p>
+            <p id="linea3" class="linea-letra">Mi peor error fue haber aceptado mi fealdad</p>
+            <p id="linea4" class="linea-letra">Porque ahora ya no tengo dónde esconder el miedo</p>
+            <p id="linea5" class="linea-letra">Y el miedo sigue vivo; se la vive aquí conmigo</p>
+            <p id="linea6" class="linea-letra">Yo me baso en la apariencia, con placer y sin conciencia</p>
+            <p id="linea7" class="linea-letra">Espero que algún día, tu atención fijes en mí</p>
+            <p id="linea8" class="linea-letra">Es por eso que ahora visto así</p>
+            <p id="linea9" class="linea-letra">Quiero ser elegante y estilero hasta el fin</p>
+            <p id="linea10" class="linea-letra">No podré proyectarlo; me lo tengo que creer</p>
+            <p id="linea11" class="linea-letra">Suponiendo que en la gente la belleza es natural</p>
+            <p id="linea12" class="linea-letra">Pues belleza es la palabra que aún no logro concretar</p>
+            <p id="linea13" class="linea-letra">Disfraz, disfraz</p>
+            <p id="linea14" class="linea-letra">Narcisista artificial</p>
+            <p id="linea15" class="linea-letra">Disfraz, disfraz (Todo es mental)</p>
+            <p id="linea16" class="linea-letra"></p>
+            <p id="linea17" class="linea-letra">¿Cómo me peinaré esta noche?</p>
+            <p id="linea18" class="linea-letra">¿Qué ropa me combinará mejor?</p>
+            <p id="linea19" class="linea-letra">Tener tu interés</p>
+            <p id="linea20" class="linea-letra">Convertirlo en amor</p>
+            <p id="linea21" class="linea-letra">Quisiera poder saber qué piensas</p>
+            <p id="linea22" class="linea-letra">¿Me veré bien o acaso me veo mal?</p>
+            <p id="linea23" class="linea-letra">Sé que es patético</p>
+            <p id="linea24" class="linea-letra">Pero en mí es normal</p>
+            <p id="linea25" class="linea-letra">Suponiendo que en la gente la belleza es natural</p>
+            <p id="linea26" class="linea-letra">Pues belleza es la palabra que aún no logro concretar</p>
+            <p id="linea27" class="linea-letra">Disfraz, disfraz</p>
+            <p id="linea28" class="linea-letra">Narcisista artificial</p>
+            <p id="linea29" class="linea-letra">Disfraz, disfraz (Todo es mental)</p>
+            <p id="linea30" class="linea-letra"></p>
+            <p id="linea31" class="linea-letra">Suponiendo que en la gente la belleza es natural</p>
+            <p id="linea32" class="linea-letra">Pues belleza es la palabra que aún no logro concretar</p>
+            <p id="linea33" class="linea-letra">Disfraz, disfraz</p>
+            <p id="linea34" class="linea-letra">Narcisista artificial</p>
+            <p id="linea35" class="linea-letra">Disfraz, disfraz (Todo es mental)</p>
+            <p id="linea36" class="linea-letra"></p>
+            
+  </div>
+          </div>
+        </div>
+<div class="colorful-element" id="colorful-element"></div>
+</div>
+</div>
+
+<script src="../JS/ReproductorNarcicista.js"></script>
+</body>
+</html>
